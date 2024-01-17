@@ -7,8 +7,11 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+import chromedriver_autoinstaller
 import time
 import os
+
+chromedriver_autoinstaller.install()
 
 TOKEN = os.environ["DISCORD_TOKEN"]
 
