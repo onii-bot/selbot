@@ -35,7 +35,7 @@ def scrape(word: str):
         options.add_argument("--headless")
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
-        driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH") ,options=options)
+        driver = webdriver.Chrome(options=options)
         link = "https://www.namecheap.com/domains/registration/results/?domain=" + word
         driver.get(link)
         time.sleep(1)
